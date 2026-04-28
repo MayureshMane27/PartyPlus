@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { io } from 'socket.io-client';
 import {
-  Users, Store, CalendarDays, TrendingUp, MapPin,
-  CheckCircle, Clock, ShieldCheck, Activity, ShoppingCart, UserPlus, CalendarCheck
+  Users, Store, CalendarDays, MapPin,
+  CheckCircle, ShieldCheck, Activity, ShoppingCart, UserPlus, CalendarCheck
 } from 'lucide-react';
 import {
   useAdminStats, useAdminUsers, useApproveVendor, useAdminEvents, useAdminActivity,
@@ -39,7 +39,7 @@ export default function Admin() {
   const { data: stats, isLoading: loadingStats } = useAdminStats();
   const { data: users = [], isLoading: loadingUsers } = useAdminUsers();
   const { data: events = [] } = useAdminEvents();
-  const { data: bookings = [], isLoading: loadingBookings } = useAdminBookings();
+  const { data: bookings = [] } = useAdminBookings();
   const { data: activity } = useAdminActivity();
   const approveVendor = useApproveVendor();
   const deleteUser = useDeleteUser();

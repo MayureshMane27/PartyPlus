@@ -1,12 +1,11 @@
 import { useState } from 'react';
-import { Plus, Trash2, Edit3, Package } from 'lucide-react';
+import { Plus, Trash2 } from 'lucide-react';
 import {
   useMyServices, useCreateService, useDeleteService,
-  useMyEvents, useCreateEvent,
 } from '@/lib/queries';
 import {
   SectionHeader, EmptyState, SkeletonCard, Modal,
-  Button, Input, Select, Textarea, CategoryBadge, StatusBadge,
+  Button, Input, Select, Textarea, CategoryBadge,
 } from '@/components/ui';
 import { formatPrice, formatDate } from '@/lib/utils';
 import toast from 'react-hot-toast';

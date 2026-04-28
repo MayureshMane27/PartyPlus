@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom';
 import {
-  CalendarCheck, Star, MapPin, Plus, ArrowRight,
+  CalendarCheck, Star, Plus, ArrowRight,
   TrendingUp, Clock, CheckCircle, XCircle, Store, CalendarDays,
-  Printer, Download, FileText, Crown,
+  FileText, Crown, Download,
 } from 'lucide-react';
 import { useAuthStore } from '@/store/authStore';
 import { useBookings, useCancelBooking, useMyServices, useMyEvents } from '@/lib/queries';
 import {
   StatusBadge, EmptyState, SkeletonCard, SectionHeader, Button, Modal,
 } from '@/components/ui';
-import { formatPrice, formatDate, cn } from '@/lib/utils';
+import { formatPrice, formatDate } from '@/lib/utils';
 import toast from 'react-hot-toast';
 import type { Booking } from '@/types';
 import { useState, useRef } from 'react';

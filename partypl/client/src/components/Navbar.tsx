@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import {
   Crown, Menu, X, LayoutDashboard, LogOut,
-  CalendarDays, Users, ShieldCheck,
+  ShieldCheck,
 } from 'lucide-react';
 import { useAuthStore } from '@/store/authStore';
 import { Avatar } from './ui';

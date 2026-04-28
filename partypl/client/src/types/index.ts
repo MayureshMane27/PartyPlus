@@ -13,6 +13,7 @@ export interface User {
   email: string;
   role: Role;
   approved: boolean;
+  createdAt?: string;
 }
 
 export interface Service {

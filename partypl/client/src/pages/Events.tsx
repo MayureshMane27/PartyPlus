@@ -219,6 +219,8 @@ function EventDetailModal({ event, onClose }: { event: Event | null; onClose: ()
       return;
     }
 
+    if (!event) return;
+
     try {
       await createBooking.mutateAsync({
         eventName: event.name,

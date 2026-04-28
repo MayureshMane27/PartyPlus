@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import {
-  ArrowRight, Star, MapPin, Camera, Music,
+  ArrowRight, Star, Camera, Music,
   UtensilsCrossed, Building2, Palette, Sparkles, CalendarDays,
 } from 'lucide-react';
 import { useAuthStore } from '@/store/authStore';
@@ -137,7 +137,7 @@ export default function Home() {
               { step: '01', title: 'Browse vendors', desc: 'Curated selection of top-tier professionals in your city.', icon: Star },
               { step: '02', title: 'Seamless Booking', desc: 'Book with confidence through our secure and easy platform.', icon: CalendarDays },
               { step: '03', title: 'Memorable Events', desc: 'Enjoy your special day while we handle the details.', icon: Music },
-            ].map((item, idx) => (
+            ].map((item) => (
               <div key={item.step} className="relative">
                 <div className="text-9xl font-display text-brand-50 absolute -top-10 -left-4 pointer-events-none opacity-50">
                   {item.step}

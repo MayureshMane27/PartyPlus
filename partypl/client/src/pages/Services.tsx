@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Search, SlidersHorizontal, Zap, Utensils, Palette, Camera, Music, Home } from 'lucide-react';
+import { Search, Zap, Utensils, Palette, Camera, Music, Home } from 'lucide-react';
 import { useServices, useCreateBooking } from '@/lib/queries';
 import {
   CategoryBadge, EmptyState, SkeletonCard,
